@@ -1416,3 +1416,13 @@
     - nlp
     - text generation
     - research
+
+- local: vq-diffusion
+  title: "VQ Diffusion with 🧨 Diffusers"
+  author: williamberman
+  thumbnail: /blog/assets/116_vq_diffusion/thumbnail.png
+  date: November 15, 2022
+  tags:
+    - diffusers
+    - diffusion
+    - text-to-image
