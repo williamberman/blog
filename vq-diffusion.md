@@ -97,7 +97,10 @@ The approximate reverse process is structurally similar to the discrete reverse 
 There is a smaller amount of literature covering discrete diffusion models than continuous diffusion models. [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585) introduces a diffusion model over a binomial distribution. [Argmax Flows and Multinomial Diffusion](https://arxiv.org/abs/2102.05379) extends discrete diffusion to multinomial distributions and trains a transformer for predicting the unnoised distribution for a language modeling task. [Structured Denoising Diffusion Models in Discrete State-Spaces](https://arxiv.org/abs/2107.03006) generalizes multinomial diffusion with alternative noising processes i.e. uniform, absorbing, discretized gaussian, token embedding distance. Alternative noising processes are also possible in continuous diffusion models, but as noted in the paper, only additive Gaussian noise has received significant attention.
 
 ##### Autoregressive Models
-TODO
+
+It's perhaps more interesting to compare VQ Diffusion to AR models as they more frequently feature transformers. While transformers have demonstrated success in AR modeling, they still suffer from linear decreases in inference speed for increased image resolution, error accumulation, and directional bias. VQ Diffusion improves on all three pain points.
+
+Some history on AR models, [PixelCNN++](https://arxiv.org/abs/1701.05517) 
 
 ### Further steps with VQ Diffusion and 🧨 Diffusers
 
